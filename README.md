@@ -2,13 +2,7 @@
 
 > An intelligent multilingual AI chatbot for college students — Smart India Hackathon (SIH) Project
 
-![RAJ-Sahayak Banner](https://img.shields.io/badge/SIH-2024-purple?style=for-the-badge)
-![React](https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb)
-
----
-
+https://github.com/viji0719/Multilingual-chatbot/blob/1a43fb3e3b3d01d6400535aae0ea1446ef0a99e0/chatbot
 ## 📌 Overview
 
 **RAJ-Sahayak** is a multilingual AI-powered assistant designed to help college students get instant answers to their queries — about admissions, exams, fees, hostel, counselling, and more. It features a powerful admin dashboard for managing FAQs, staff, and analytics.
