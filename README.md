@@ -192,22 +192,6 @@ SIH_FINAL-Code/
 
 ## 🏆 Built For
 
-**Smart India Hackathon (SIH) 2024**  
+**Smart India Hackathon (SIH) 2025**  
 Theme: Education / AI for Students  
-Team: MUTHU
 
----
-
-## 📝 License
-
-This project is developed for educational and hackathon purposes.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-> *"Empowering students with instant, multilingual AI support — anytime, anywhere."*
