@@ -1,191 +1,66 @@
-# RAJ-Sahayak AI Assistant 🤖
+# Candy 🍬 — Multilingual Language-Agnostic Chatbot
 
-> An intelligent multilingual AI chatbot for college students — Smart India Hackathon (SIH) Project
+> Smart India Hackathon 2025 | Team Solution Seekers – PEC | Top 8,000 Grand Finalists out of 72,165 submissions
 
-https://github.com/viji0719/Multilingual-chatbot/blob/1a43fb3e3b3d01d6400535aae0ea1446ef0a99e0/chatbot
-## 📌 Overview
-
-**RAJ-Sahayak** is a multilingual AI-powered assistant designed to help college students get instant answers to their queries — about admissions, exams, fees, hostel, counselling, and more. It features a powerful admin dashboard for managing FAQs, staff, and analytics.
-
----
-
-## ✨ Features
-
-### 🌐 Chatbot (Student-Facing)
-- Multilingual support: **English, Hindi, Tamil, Telugu, Gujarati, Marathi** and more
-- Natural language Q&A powered by AI
-- Clean, accessible chat interface
-- Real-time responses
-
-### 🛠️ Admin Panel
-- **Dashboard** — Total students, total queries, quick actions
-- **PDF FAQ Generator** — Upload PDFs and auto-generate Q&A pairs using AI
-- **Staff Management** — Add, edit, activate/deactivate staff members
-- **Analytics Dashboard** — Language distribution, query categories, accuracy rate, escalations
-- **Admin Settings** — Manage account email/password
+![React](https://img.shields.io/badge/React-Vite-61DAFB?style=flat-square&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python)
 
 ---
 
-## 📊 Analytics Highlights
+## About
 
-| Metric | Value |
-|--------|-------|
-| Total Users | 238 |
-| Total Queries | 545 |
-| AI Accuracy Rate | 88.51% |
-| Human Escalations | 87 |
-| Languages Supported | 9 |
-
-**Top Query Categories:** Management, Exams, Counselling, Hostel, Fees, Library, Admission
+**Candy** is a multilingual, language-agnostic AI chatbot built to help college students get instant answers to their queries — covering admissions, exams, fees, hostel, counselling, and more. The admin panel enables staff to manage FAQs, monitor analytics, and keep the system up to date with minimal effort.
 
 ---
 
-## 🗂️ Project Structure
+## 📸 Preview
 
+| Chatbot | Analytics Dashboard | FAQ Generator |
+|---------|---------------------|---------------|
+| [View →](https://github.com/viji0719/Multilingual-chatbot/blob/1a43fb3e3b3d01d6400535aae0ea1446ef0a99e0/chatbot) | [View →](https://github.com/viji0719/Multilingual-chatbot/blob/aa8bf5d48b3a771b3356c84d0052da866d998e96/analytics%20dashboard) | [View →](https://github.com/viji0719/Multilingual-chatbot/blob/aa8bf5d48b3a771b3356c84d0052da866d998e96/faq%20generator) |
+
+---
+
+## Features
+
+- 🌐 **Multilingual Support** — 9 languages including English, Hindi, Tamil, Telugu, Gujarati & Marathi
+- 📄 **PDF FAQ Generator** — Upload PDFs and auto-generate Q&A pairs using AI, then sync to the chatbot
+- 📊 **Analytics Dashboard** — Real-time query tracking, language distribution, and category insights
+- 👥 **Staff Management** — Manage staff roles and departments from the admin panel
+- 🔐 **Secure Admin Panel** — JWT-based authentication with role-based access control
+
+---
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/viji0719/Multilingual-chatbot.git
+cd Multilingual-chatbot/final/Backend
+npm install
+# Configure .env with MONGO_URI, JWT_SECRET, GEMINI_API_KEY
+node server.js        # Backend → http://localhost:5000
+npm run dev           # Frontend → http://localhost:5173
 ```
-SIH_FINAL-Code/
-├── final/
-│   ├── Backend/               # Node.js + Express API
-│   │   ├── routes/            # API routes
-│   │   ├── uploaded/          # Uploaded PDF storage
-│   │   ├── server.js          # Main server entry
-│   │   ├── app.py             # Python AI processing
-│   │   ├── main.py            # FAQ extraction logic
-│   │   ├── .env               # Environment variables
-│   │   └── package.json
-│   └── dist/                  # Frontend build output
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **Node.js** v18+
-- **Python** 3.10+
-- **MongoDB** (local or Atlas)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd SIH_FINAL-Code/final
-   ```
-
-2. **Install backend dependencies**
-   ```bash
-   cd Backend
-   npm install
-   ```
-
-3. **Install Python dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure environment variables**
-   
-   Create a `.env` file in the `Backend/` folder:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
-   JWT_SECRET=your_jwt_secret
-   GEMINI_API_KEY=your_gemini_api_key
-   ```
-
-5. **Run the backend server**
-   ```bash
-   node server.js
-   ```
-
-6. **Run the frontend (development)**
-   ```bash
-   # From the project root
-   npm install
-   npm run dev
-   ```
-
-   Frontend runs at: `http://localhost:5173`  
-   Backend API runs at: `http://localhost:5000`
-
----
-
-## 🔐 Admin Access
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | `admin@college.edu` | `(set in .env)` |
-| Staff | `staff@college.edu` | `(set in .env)` |
-
-> Quick demo access buttons are available on the login screen.
-
----
-
-## 📄 PDF FAQ Generator Workflow
-
-1. Admin uploads one or more PDF files (brochures, circulars, handbooks)
-2. PDFs are dragged into the **AI Processing Hub**
-3. Click **"Process All Files"** — AI extracts intelligent Q&A pairs
-4. Review generated FAQs
-5. Click **"Sync to Chatbot"** — FAQs are instantly available to students
-
----
-
-## 🧑‍💼 Staff Management
-
-- Add staff with full name, email, department, role, phone, and join date
-- Departments: Computer Science, Administration, Examination, Mathematics, Library
-- Toggle staff active/inactive status
-- View, edit, or remove staff members
-
----
-
-## 🌍 Supported Languages
-
-| Language | Code |
-|----------|------|
-| English | en |
-| Hindi | hi |
-| Tamil | ta |
-| Telugu | te |
-| Gujarati | gu |
-| Marathi | mr |
-| Kannada | kn |
-| Bengali | bn |
-| Malayalam | ml |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React (Vite) |
+| Layer | Tech |
+|-------|------|
+| Frontend | React + Vite |
 | Backend | Node.js + Express |
 | Database | MongoDB |
-| AI/ML | Python (Gemini API / LLM) |
-| Styling | CSS / Tailwind |
+| AI Processing | Python + Gemini API |
 | Auth | JWT |
 
 ---
 
-## 📸 Screenshots
+## Team
 
-| Feature | Description |
-|---------|-------------|
-| Chatbot | Multilingual student-facing AI assistant |
-| Admin Login | Secure dashboard sign-in |
-| Dashboard | Overview of students, queries, and quick actions |
-| FAQ Generator | PDF-to-FAQ AI pipeline |
-| Staff Management | Add and manage staff members |
-| Analytics | Language distribution and query category insights |
-
----
-
-## 🏆 Built For
-
-**Smart India Hackathon (SIH) 2025**  
-Theme: Education / AI for Students  
-
+**Team Name:** Solution Seekers – PEC  
+**Members:** Sudalai Muthu S, Shachindran H A, Srinithi M, Pooja Umanath, Subin Balakrishnan  
+**Event:** Smart India Hackathon 2025 – Software Edition  
+**Nodal Centre:** Poornima Institute of Engineering & Technology, Jaipur
